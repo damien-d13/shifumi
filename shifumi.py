@@ -74,4 +74,5 @@ def main():
         print("Choix invalide. Veuillez relancer le programme et entrer 1 ou 2.")
 
 
-main()
+if __name__ == "__main__":
+    main()
