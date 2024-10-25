@@ -1,12 +1,14 @@
 import random
 
+options = ['pierre', 'feuille', 'ciseaux']
+
 
 def get_random_choice():
     """
     Retourne un choix aléatoire : 'pierre', 'feuille' ou 'ciseaux'.
     :return: str
     """
-    return random.choice(['pierre', 'feuille', 'ciseaux'])
+    return random.choice(options)
 
 
 def determine_winner(choice1, choice2):
@@ -47,7 +49,7 @@ def play_user_vs_computer():
         if user_choice == 'q':
             print("Merci d'avoir joué !")
             break
-        elif user_choice not in ['pierre', 'feuille', 'ciseaux']:
+        elif user_choice not in options:
             print("Choix invalide, veuillez essayer à nouveau.")
             continue
 
